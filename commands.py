@@ -13,9 +13,9 @@ class Commandplayer():
 
     def terminalOutput(self, result):
         if result == "stats":
-            self.terminal.insert(1, self.player.helloPlayer())
+            self.terminal.insert(1, str(self.player.helloPlayer()))
             self.terminal.pack()
 
         if result == "attack":
-            self.terminal.insert(2, self.player.attack_enemy(self.blob))
+            self.terminal.insert(2, str(self.player.attack_enemy(self.blob)))
             self.terminal.pack()
